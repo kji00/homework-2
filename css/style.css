@@ -1,0 +1,126 @@
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+    --headcolor: rgb(18, 126, 143);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--headcolor);
+    border: 2px solid black;
+}
+
+header h1 {
+    padding: 1%;
+    margin: 0;
+    font-size: 4vw;
+    line-height: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: flex;
+    padding: 5px 10px;
+    margin-right: 10px;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.hero {
+    display: flex;
+    background-image: url("../images/herobanner.jpeg");
+    background-size: cover;
+    background-position: center;
+    min-height: 30vh;
+    border: 2px solid black;
+}
+
+.info {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.info > h2 {
+    border-bottom: 4px solid black;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 4vw;
+}
+
+.bio > h3 {
+    border-bottom: 4px solid black;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.info > div {
+    flex: 0 0 55%;
+}
+
+.bio ul {
+    list-style: circle;
+    justify-content: center;
+    display: flex;
+}
+
+.bio li {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 5px;
+}
+
+.works a {
+    border: 5px solid black;
+    color: var(--headcolor);
+    min-height: 15vh;
+    min-width: 15vw;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    background-size: cover;
+    font-size: 0.9rem;
+}
+
+.htmlcssjs {
+background-image: url("../images/htmlcssjs.jpeg");
+}
+
+.sql {
+background-image: url("../images/SQL-Vs-NoSQL1.png");
+}
+
+.node {
+background-image: url("../images/nodejs.webp");
+}
+
+.react {
+background-image: url("../images/reactjs.png");
+}
+
+
